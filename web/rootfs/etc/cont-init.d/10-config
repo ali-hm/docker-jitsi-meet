@@ -94,3 +94,11 @@ if [[ ! -f /config/interface_config.js ]]; then
             /config/interface_config.js
     fi
 fi
+
+if [[ -f /config/images/watermark.svg ]]; then
+    cp /config/images/watermark.svg /usr/share/jitsi-meet2/images/watermark.svg
+fi
+
+if [[ -f /config/images/welcome-background.png ]]; then
+    cp /config/images/welcome-background.png /usr/share/jitsi-meet2/images/welcome-background.png
+fi
